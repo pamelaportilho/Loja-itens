@@ -10,5 +10,15 @@ int total = porçoes * precoPorcao;
 Console.WriteLine($"Total da compra: {total} moedas.");
 
 
+if(moedas >= total)
+{
+    int saldorestante = moedas - total;
+    Console.WriteLine($"Compra realizada! Saldo restante:{saldoRestante}");
+}
+else
+{
+    Console.WriteLine("Saldo insuficiente para realizar a compra.");
+}
+
 
 
